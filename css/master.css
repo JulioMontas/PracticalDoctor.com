@@ -1,77 +1,33 @@
+/* ---- Global ---- */
 html,
-body {
+body,
+#intro-one {
   height: 100%;
 }
 
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  color: white;
 }
-
 
 canvas{
   display:block;
-  vertical-align:bottom;}
+  vertical-align:bottom;
+}
 
 /* ---- particles.js container ---- */
-#particles-js{
+#intro-one #particles-js{
   width: 100%;
   height: 100%;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  z-index: -1;}
-
-#flex-container{
-  left: 25%;
-  margin: -110px 0 0 -180px;
-  padding: 20px;
-  position: absolute;
-  top: 35%;
+  z-index: -1;
 }
 
-.center{
-
-}
-
-h1{
-  font-weight: 200;
-  font-size: 4em;
-  text-transform: uppercase;
-}
-
-p {
-    font-size: 2.5em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    margin-top: 12%;
-    text-transform: capitalize;
-}
-
-
-.line {
-    background: white none repeat scroll 0 0;
-    height: 10px;
-    margin-left: 6px;
-    margin-top: -40px;
-    text-align: center;
-    width: 425px;
-}
-
-
-#bg_color_first{
-  background: #61E5FF;
-}
-
-#bg_color_second{
-  background: #25EE8D;
-}
-
-
-
-#bg-animated {
+/* ---- Intro: Animated Background ---- */
+#intro-one #bg-animated {
    background: linear-gradient(270deg, #25EE8D, #61E5FF);
    background-size: 400% 400%;
    width: 100%;
@@ -102,3 +58,113 @@ p {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
  }
+
+#intro-one #flex-container{
+  padding: 20px;
+  margin: -110px 0 0 -180px;
+  left: 25%;
+  position: absolute;
+}
+
+#bg_color_first{background: #61E5FF;}
+#bg_color_second{background: #25EE8D;}
+
+#intro-two {background: yellow none repeat scroll 0 0;}
+#intro-three {background: red none repeat scroll 0 0;}
+
+#intro-two,
+#intro-three {
+  margin-top: -20px;
+}
+
+#intro-two,
+#intro-three {
+  height: 500px;
+}
+
+/*
+####################
+## Resposibe Time ##
+####################
+*/
+
+/* Mobile in Portrait mode */
+@media only screen
+and (min-width : 320px) {
+  /* Intro Center Container */
+  #intro-one #flex-container {
+    top: 13%;
+    left: 0%;
+    margin: 0px;
+  }
+  /* Intro: Logo Style  */
+  #intro-one h1,
+  #intro-one p {
+    color: black;
+  }
+  #intro-one h1 {
+    font-size: 2.6em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  #intro-one p {
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-top: 15%;
+    text-transform: capitalize;
+  }
+  #intro-one .logo-line {
+    background: black none repeat scroll 0 0;
+    height: 10px;
+    margin-left: 3px;
+    margin-top: -19px;
+    width: 282px;
+  }
+}
+
+/* Tablets */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Intro Center Container */
+  #intro-one #flex-container{top: 25%;}
+
+  /* Intro: Logo Style  */
+  #intro-one h1{font-size: 5.4em;}
+
+  #intro-one p {
+    font-size: 2.5em;
+    font-weight: 200;
+    margin-top: 17%;
+  }
+  #intro-one .logo-line {
+    margin-left: 6px;
+    margin-top: -40px;
+    width: 573px;
+  }
+}
+
+/* Desktop and Laptops computer */
+@media only screen
+and (min-width : 1224px) {
+  /* Intro Center Container */
+  #intro-one #flex-container{top: 35%;}
+
+  /* Intro: Logo Style  */
+  #intro-one h1,
+  #intro-one p{
+    color: white;
+  }
+
+  #intro-one h1{font-size: 4em;}
+
+  #intro-one p {
+    font-weight: 300;
+    margin-top: 12%;
+  }
+  #intro-one .logo-line {
+    background: white none repeat scroll 0 0;
+    width: 425px;
+  }
+}
