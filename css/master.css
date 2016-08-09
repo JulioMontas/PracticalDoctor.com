@@ -87,6 +87,7 @@ canvas{
 }
 
 
+
 /*
 ####################
 ## Resposibe Time ##
@@ -129,10 +130,13 @@ and (min-width : 320px) {
 
   /* Web Present:   */
   #web-present .title-line,
-  #web-present .title p{
+  #web-present .title p,
+  #practical-optimization .title-line,
+  #practical-optimization .title p{
     margin: 0 auto;
   }
-  #web-present .title{
+  #web-present .title,
+  #practical-optimization .title{
     text-align: center;
     font-style: italic;
     margin-top: 50px;
@@ -149,19 +153,22 @@ and (min-width : 320px) {
   #web-present .title-line{
     margin-top: 10px;
   }
-  #web-present .title p{
+  #practical-optimization .title-line {
+    margin-top: -42px;
+  }
+  #web-present .title p,
+  #practical-optimization .title p{
     font-size: 1em;
     line-height: 20px;
     width: 93%;
     margin-top: -15px;
   }
-
-  #web-present .title-line{
+  #web-present .title-line,
+  #practical-optimization .title-line{
     height: 5px;
     width: 180px;
     background: #88edef;
   }
-
   #web-present .box nav ul {
     display: flex;
     flex-direction: column;
@@ -204,21 +211,27 @@ and (max-device-width : 1024px) {
     width: 573px;
   }
   /* Web Present:   */
-  #web-present .title {
+  #web-present .title,
+  #practical-optimization .title {
     margin-bottom: 150px;
     margin-top: 150px;
   }
   #web-present .box nav ul {
     flex-direction: row;
   }
-  #web-present .title p {
+  #web-present .title p,
+  #practical-optimization .title p {
     width: 75%;
     font-size: 1.2em;
     line-height: 25px;
   }
-   #web-present .title-line{
+   #web-present .title-line,
+   #practical-optimization .title-line{
     width: 435px;
   }
+  #practical-optimization .title-line {
+    margin-top: -140px;
+}
    #web-present .box nav ul li {
     list-style: outside none none;
     padding: 55px 159px 40px;
@@ -226,7 +239,8 @@ and (max-device-width : 1024px) {
    #web-present .box nav ul {
     flex-direction: column;
   }
-  #web-present .title h2{
+  #web-present .title h2,
+  #practical-optimization .title h2{
     font-size: 2em;
     margin-bottom: 25px;
   }
@@ -259,36 +273,66 @@ and (min-width : 1224px) {
     width: 425px;
   }
   /* Web Present:   */
-  #web-present{
+  #web-present,
+  #practical-optimization{
     padding-right: 20px;
   }
   #web-present .title,
   #web-present .title-line{
     float: right;
+  }
+  #practical-optimization .title,
+  #practical-optimization .title-line{
+    float: left;
+  }
+
+
+  #web-present .title,
+  #web-present .title-line,
+  #practical-optimization .title,
+  #practical-optimization .title-line{
     margin: 0px;
   }
+
   #web-present .title{
     text-align: right;
+  }
+
+  #practical-optimization .title{
+    text-align: left;
+  }
+
+  #web-present .title{
     margin-top: 50px;
     margin-bottom: 50px;
-
   }
+
   #web-present .title h2,
+  #practical-optimization .title h2,
   #web-present .box nav ul li p{
     text-transform: uppercase;
   }
-  #web-present .title h2{
+  #web-present .title h2,
+  #practical-optimization .title h2{
     font-size: 1em;
     margin-bottom: 50px;
   }
-  #web-present .title p {
+
+  #practical-optimization .title p  {
+    float: left;
+  }
+  #web-present .title p  {
     float: right;
+  }
+  #web-present .title p,
+  #practical-optimization .title p  {
     line-height: 20px;
     width: 34%;
     font-size: 0.9em;
     margin-top: -45px;
   }
-  #web-present .title-line{
+  #web-present .title-line,
+  #practical-optimization .title-line{
     height: 5px;
     width: 435px;
     background: #88edef;
