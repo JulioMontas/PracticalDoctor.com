@@ -82,6 +82,11 @@ canvas{
   height: 500px;
 }
 
+#web-present .box nav ul {
+  display: flex;
+}
+
+
 /*
 ####################
 ## Resposibe Time ##
@@ -121,6 +126,61 @@ and (min-width : 320px) {
     margin-top: -19px;
     width: 282px;
   }
+
+  /* Web Present:   */
+  #web-present .title-line,
+  #web-present .title p{
+    margin: 0 auto;
+  }
+  #web-present .title{
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  #web-present .title h2,
+  #web-present .box nav ul li p{
+    text-transform: uppercase;
+  }
+  #web-present .title h2{
+    font-size: 1.5em;
+  }
+  #web-present .title-line{
+    margin-top: 10px;
+  }
+  #web-present .title p{
+    font-size: 1em;
+    line-height: 20px;
+    width: 93%;
+    margin-top: -15px;
+  }
+
+  #web-present .title-line{
+    height: 5px;
+    width: 180px;
+    background: #88edef;
+  }
+
+  #web-present .box nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #web-present .box nav ul li {
+    background: #e1e1e1 none repeat scroll 0 0;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: -40px;
+    padding: 55px 30px 40px;
+  }
+  #web-present .box nav ul li:last-child {
+    margin-right: 0px;
+  }
+  #web-present .box nav ul li p {
+    font-size: 0.9em;
+    line-height: 20px;
+    font-weight: 300;
+  }
 }
 
 /* Tablets */
@@ -143,6 +203,38 @@ and (max-device-width : 1024px) {
     margin-top: -40px;
     width: 573px;
   }
+  /* Web Present:   */
+  #web-present .title {
+    margin-bottom: 150px;
+    margin-top: 150px;
+  }
+  #web-present .box nav ul {
+    flex-direction: row;
+  }
+  #web-present .title p {
+    width: 75%;
+    font-size: 1.2em;
+    line-height: 25px;
+  }
+   #web-present .title-line{
+    width: 435px;
+  }
+   #web-present .box nav ul li {
+    list-style: outside none none;
+    padding: 55px 159px 40px;
+  }
+   #web-present .box nav ul {
+    flex-direction: column;
+  }
+  #web-present .title h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+  #web-present .box nav ul li p {
+    font-size: 1.1em;
+    line-height: 30px;
+  }
+ 
 }
 
 /* Desktop and Laptops computer */
@@ -156,7 +248,6 @@ and (min-width : 1224px) {
   #intro-one p{
     color: white;
   }
-
   #intro-one h1{font-size: 4em;}
 
   #intro-one p {
@@ -166,5 +257,62 @@ and (min-width : 1224px) {
   #intro-one .logo-line {
     background: white none repeat scroll 0 0;
     width: 425px;
+  }
+  /* Web Present:   */
+  #web-present{
+    padding-right: 20px;
+  }
+  #web-present .title,
+  #web-present .title-line{
+    float: right;
+    margin: 0px;
+  }
+  #web-present .title{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+  #web-present .title h2,
+  #web-present .box nav ul li p{
+    text-transform: uppercase;
+  }
+  #web-present .title h2{
+    font-size: 1em;
+    margin-bottom: 50px;
+  }
+  #web-present .title p {
+    float: right;
+    line-height: 20px;
+    width: 34%;
+    font-size: 0.9em;
+    margin-top: -45px;
+  }
+  #web-present .title-line{
+    height: 5px;
+    width: 435px;
+    background: #88edef;
+  }
+  #web-present .box {
+    display: inline-block;
+    width: 100%;
+  }
+  #web-present .box nav ul {
+    flex-direction: row;
+    margin-left: -25px;
+  }
+   #web-present .box nav ul li:first-child {
+    margin-left: 0;
+  }
+  #web-present .box nav ul li {
+    list-style: outside none none;
+    margin-right: 45px;
+    padding: 35px 53px 25px;
+    width: 415px;
+  }
+  #web-present .box nav ul li p {
+    font-size: 0.9em;
+    line-height: 20px;
+    font-weight: 300;
   }
 }
