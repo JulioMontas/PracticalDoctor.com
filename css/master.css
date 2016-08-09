@@ -121,11 +121,15 @@ and (min-width : 320px) {
     text-transform: capitalize;
   }
   #intro-one .logo-line {
-    background: black none repeat scroll 0 0;
+    background: linear-gradient(270deg, #25EE8D, #61E5FF);
+   background-size: 200% 200%;
     height: 10px;
     margin-left: 3px;
     margin-top: -19px;
     width: 282px;
+    -webkit-animation: AnimationName 5s ease infinite;
+   -moz-animation: AnimationName 5s ease infinite;
+   animation: AnimationName 5s ease infinite;
   }
 
   /* Web Present:   */
@@ -144,7 +148,8 @@ and (min-width : 320px) {
     width: 100%;
   }
   #web-present .title h2,
-  #web-present .box nav ul li p{
+  #web-present .box nav ul li p,
+  #practical-optimization .box nav ul li p{
     text-transform: uppercase;
   }
   #web-present .title h2{
@@ -167,12 +172,30 @@ and (min-width : 320px) {
   #practical-optimization .title-line{
     height: 5px;
     width: 180px;
-    background: #88edef;
+    background: linear-gradient(270deg, #25EE8D, #61E5FF);
+   background-size: 200% 200%;
+     -webkit-animation: AnimationName 5s ease infinite;
+   -moz-animation: AnimationName 5s ease infinite;
+   animation: AnimationName 5s ease infinite;
   }
-  #web-present .box nav ul {
+  #web-present .box nav ul,
+  #practical-optimization .box nav ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
+  #web-present .box nav ul li {
+  list-style: outside none none;
+  }
+  #practical-optimization .box nav ul li {
+  list-style: outside none none;
+  text-align: center;
+  margin-left: -40px;
+  }
+  /*for mobile only*/
+  #practical-optimization .box nav ul li:nth-of-type(2) {
+    display: none;
+}
   #web-present .box nav ul li {
     background: #e1e1e1 none repeat scroll 0 0;
     text-align: center;
@@ -183,11 +206,22 @@ and (min-width : 320px) {
   #web-present .box nav ul li:last-child {
     margin-right: 0px;
   }
-  #web-present .box nav ul li p {
+  #web-present .box nav ul li p,
+  #practical-optimization .box nav ul li p {
     font-size: 0.9em;
     line-height: 20px;
     font-weight: 300;
   }
+
+  #practical-optimization .box{
+    padding: 70px 19px;
+    background: #ffffff;
+    background: -moz-linear-gradient(-90deg,  #ffffff 0%, #83eee6 50%, #ffffff 100%);
+    background: -webkit-linear-gradient(-90deg,  #ffffff 0%,#83eee6 50%,#ffffff 100%);
+    background: linear-gradient(0deg,  #ffffff 0%,#83eee6 50%,#ffffff 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+  }
+
 }
 
 /* Tablets */
@@ -211,10 +245,13 @@ and (max-device-width : 1024px) {
     width: 573px;
   }
   /* Web Present:   */
-  #web-present .title,
-  #practical-optimization .title {
+  #web-present .title{
     margin-bottom: 150px;
     margin-top: 150px;
+  }
+  #practical-optimization .title {
+    margin-bottom: 150px;
+    margin-top: 80px;
   }
   #web-present .box nav ul {
     flex-direction: row;
@@ -232,11 +269,18 @@ and (max-device-width : 1024px) {
   #practical-optimization .title-line {
     margin-top: -140px;
 }
-   #web-present .box nav ul li {
-    list-style: outside none none;
+   #web-present .box nav ul li{
     padding: 55px 159px 40px;
   }
-   #web-present .box nav ul {
+   #practical-optimization .box nav ul li {
+    padding: 25px 40px;
+  }
+  #web-present .box nav ul li,
+   #practical-optimization .box nav ul li {
+    list-style: outside none none;
+  }
+   #web-present .box nav ul,
+   #practical-optimization .box nav ul {
     flex-direction: column;
   }
   #web-present .title h2,
@@ -244,7 +288,8 @@ and (max-device-width : 1024px) {
     font-size: 2em;
     margin-bottom: 25px;
   }
-  #web-present .box nav ul li p {
+  #web-present .box nav ul li p,
+  #practical-optimization .box nav ul li p  {
     font-size: 1.1em;
     line-height: 30px;
   }
@@ -337,24 +382,38 @@ and (min-width : 1224px) {
     width: 435px;
     background: #88edef;
   }
-  #web-present .box {
+
+  #web-present .box,
+  #practical-optimization .box {
     display: inline-block;
     width: 100%;
   }
-  #web-present .box nav ul {
+  #web-present .box nav ul,
+  #practical-optimization .box nav ul {
     flex-direction: row;
     margin-left: -25px;
   }
-   #web-present .box nav ul li:first-child {
+   #web-present .box nav ul li:first-child,
+   #practical-optimization .box nav ul li:first-child {
     margin-left: 0;
   }
-  #web-present .box nav ul li {
+  /*for mobile only*/
+  #practical-optimization .box nav ul li:nth-of-type(2) {
+    background: white none repeat scroll 0 0;
+    display: inline;
+    height: 120px;
+    padding: 0;
+    width: 1px;
+} 
+  #web-present .box nav ul li,
+  #practical-optimization .box nav ul li  {
     list-style: outside none none;
     margin-right: 45px;
     padding: 35px 53px 25px;
     width: 415px;
   }
-  #web-present .box nav ul li p {
+  #web-present .box nav ul li p,
+  #practical-optimization .box nav ul li p {
     font-size: 0.9em;
     line-height: 20px;
     font-weight: 300;
