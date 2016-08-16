@@ -214,7 +214,7 @@ and (min-width : 320px) {
   }
 
   #practical-optimization .box{
-    padding: 70px 19px;
+    padding: 130px 10px;
     background: #ffffff;
     background: -moz-linear-gradient(-90deg,  #ffffff 0%, #83eee6 50%, #ffffff 100%);
     background: -webkit-linear-gradient(-90deg,  #ffffff 0%,#83eee6 50%,#ffffff 100%);
@@ -293,7 +293,7 @@ and (max-device-width : 1024px) {
     font-size: 1.1em;
     line-height: 30px;
   }
- 
+
 }
 
 /* Desktop and Laptops computer */
@@ -318,9 +318,19 @@ and (min-width : 1224px) {
     width: 425px;
   }
   /* Web Present:   */
+  #practical-optimization{
+
+
+  }
+  #web-present{
+
+  }
+
   #web-present,
   #practical-optimization{
     padding-right: 20px;
+    padding-top: 120px;
+    padding-bottom:50px;
   }
   #web-present .title,
   #web-present .title-line{
@@ -330,7 +340,6 @@ and (min-width : 1224px) {
   #practical-optimization .title-line{
     float: left;
   }
-
 
   #web-present .title,
   #web-present .title-line,
@@ -345,11 +354,12 @@ and (min-width : 1224px) {
 
   #practical-optimization .title{
     text-align: left;
+    margin-left: 20px;
   }
 
-  #web-present .title{
-    margin-top: 50px;
-    margin-bottom: 50px;
+  #web-present .title,
+  #practical-optimization .title{
+    margin-bottom: 120px;
   }
 
   #web-present .title h2,
@@ -379,10 +389,13 @@ and (min-width : 1224px) {
   #web-present .title-line,
   #practical-optimization .title-line{
     height: 5px;
-    width: 435px;
-    background: #88edef;
   }
-
+  #web-present .title-line{
+    width: 435px;
+  }
+  #practical-optimization .title-line{
+    width: 435px;
+  }
   #web-present .box,
   #practical-optimization .box {
     display: inline-block;
@@ -404,7 +417,7 @@ and (min-width : 1224px) {
     height: 120px;
     padding: 0;
     width: 1px;
-} 
+}
   #web-present .box nav ul li,
   #practical-optimization .box nav ul li  {
     list-style: outside none none;
